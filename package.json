@@ -1,0 +1,24 @@
+{
+  "name": "pokedata",
+  "version": "1.0.0",
+  "description": "A web scrapper that collects data on all the Pokémon",
+  "main": "data_fetcher.js",
+  "scripts": {
+    "build": "tsc && node dist/app.js",
+    "start": "nodemon src/index.ts",
+    "test": "node tests/test.ts"
+  },
+  "type": "module",
+  "author": "Inklay",
+  "license": "GNU-3.0",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.32",
+    "@types/node": "^20.8.4",
+    "@types/node-fetch-cache": "^3.0.1",
+    "tsx": "^4.16.3",
+    "typescript": "^5.2.2"
+  }
+}

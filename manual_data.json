@@ -1,0 +1,819 @@
+[
+  {
+    "id": 25,
+    "forms": [
+      {
+        "names" : [
+          { "language": "en", "text": "Partner Pikachu"},
+          { "language": "ja", "text": "ピカチュウ（相棒）"},
+          { "language": "zh-Hant", "text": "皮卡丘"},
+          { "language": "fr", "text": "Pikachu Partenaire"},
+          { "language": "de", "text": "Partner-Pikachu"},
+          { "language": "it", "text": "Pikachu (Let's Go)"},
+          { "language": "es", "text": "Pikachu (Let's Go)"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu Rock Star"},
+          { "language": "ja", "text": "ハードロック・ピカチュウ"},
+          { "language": "zh-Hant", "text": "硬摇滚皮卡丘"},
+          { "language": "fr", "text": "Pikachu Rockeur"},
+          { "language": "de", "text": "Rocker-Pikachu"},
+          { "language": "it", "text": "Pikachu rockstar"},
+          { "language": "es", "text": "Roquera Pikach"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu Belle"},
+          { "language": "ja", "text": "マダム・ピカチュウ"},
+          { "language": "zh-Hant", "text": "贵妇皮卡丘"},
+          { "language": "fr", "text": "Pikachu Lady"},
+          { "language": "de", "text": "Damen-Pikachu"},
+          { "language": "it", "text": "Pikachu damigella"},
+          { "language": "es", "text": "Aristócrata Pikach"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu Pop Star"},
+          { "language": "ja", "text": "アイドル・ピカチュウ"},
+          { "language": "zh-Hant", "text": "偶像皮卡丘"},
+          { "language": "fr", "text": "Pikachu Star"},
+          { "language": "de", "text": "Star-Pikachu"},
+          { "language": "it", "text": "Pikachu confetto"},
+          { "language": "es", "text": "Superstar Pikach"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu, Ph.D"},
+          { "language": "ja", "text": "ドクター・ピカチュウ"},
+          { "language": "zh-Hant", "text": "博士皮卡丘"},
+          { "language": "fr", "text": "Pikachu Docteur"},
+          { "language": "de", "text": "Professoren-Pikachu"},
+          { "language": "it", "text": "Pikachu scienziata"},
+          { "language": "es", "text": "Erudita Pikach"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu Libre"},
+          { "language": "ja", "text": "マスクド・ピカチュウ"},
+          { "language": "zh-Hant", "text": "面罩摔角手皮卡丘"},
+          { "language": "fr", "text": "Pikachu Docteur"},
+          { "language": "de", "text": "Wrestler-Pikachu"},
+          { "language": "it", "text": "Pikachu wrestler"},
+          { "language": "es", "text": "Enmascarada Pikach"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu Original Cap"},
+          { "language": "ja", "text": "オリジナルキャップ・ピカチュウ"},
+          { "language": "zh-Hant", "text": "皮卡丘（初始帽子)"},
+          { "language": "fr", "text": "Pikachu (Casquette Originale)"},
+          { "language": "de", "text": "Pikachu (Original-Kappe)"},
+          { "language": "it", "text": "Pikachu Berretto Originale"},
+          { "language": "es", "text": "Pikachu con gorra Original"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu Hoenn Cap"},
+          { "language": "ja", "text": "ホウエンキャップ・ピカチュウ"},
+          { "language": "zh-Hant", "text": "皮卡丘（丰缘帽子)"},
+          { "language": "fr", "text": "Pikachu (Casquette de Hoenn)"},
+          { "language": "de", "text": "Pikachu (Hoenn-Kappe)"},
+          { "language": "it", "text": "Pikachu Berretto Hoenn"},
+          { "language": "es", "text": "Pikachu con gorra Hoenn"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu Sinnoh Cap"},
+          { "language": "ja", "text": "シンオウキャップ・ピカチュウ"},
+          { "language": "zh-Hant", "text": "皮卡丘（神奥帽子)"},
+          { "language": "fr", "text": "Pikachu (Casquette de Sinnoh)"},
+          { "language": "de", "text": "Pikachu (Sinnoh-Kappe)"},
+          { "language": "it", "text": "Pikachu Berretto Sinnoh"},
+          { "language": "es", "text": "Pikachu con gorra Sinnoh"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu Unova Cap"},
+          { "language": "ja", "text": "イッシュキャップ・ピカチュウ"},
+          { "language": "zh-Hant", "text": "皮卡丘（合众帽子)"},
+          { "language": "fr", "text": "Pikachu (Casquette d'Unys)"},
+          { "language": "de", "text": "Pikachu (Einall-Kappe)"},
+          { "language": "it", "text": "Pikachu Berretto Unima"},
+          { "language": "es", "text": "Pikachu con gorra Teselia"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu Kalos Cap"},
+          { "language": "ja", "text": "カロスキャップ・ピカチュウ"},
+          { "language": "zh-Hant", "text": "皮卡丘（卡洛斯帽子)"},
+          { "language": "fr", "text": "Pikachu (Casquette de Kalos)"},
+          { "language": "de", "text": "Pikachu (Kalos-Kappe)"},
+          { "language": "it", "text": "Pikachu Berretto Kalos"},
+          { "language": "es", "text": "Pikachu con gorra Kalos"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu Alola Cap"},
+          { "language": "ja", "text": "アローラキャップ・ピカチュウ"},
+          { "language": "zh-Hant", "text": "皮卡丘（阿罗拉帽子)"},
+          { "language": "fr", "text": "Pikachu (Casquette d'Alola)"},
+          { "language": "de", "text": "Pikachu (Alola-Kappe)"},
+          { "language": "it", "text": "Pikachu Berretto Alola"},
+          { "language": "es", "text": "Pikachu con gorra Alola"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu Partner Cap"},
+          { "language": "ja", "text": "キミにきめたキャップ・ピカチュウ"},
+          { "language": "zh-Hant", "text": "皮卡丘（就决定是你了之帽子)"},
+          { "language": "fr", "text": "Pikachu (Casquette Partenaire)"},
+          { "language": "de", "text": "Pikachu (Partner-Kappe)"},
+          { "language": "it", "text": "Pikachu Berretto Compagni"},
+          { "language": "es", "text": "Pikachu con gorra Compañero"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Pikachu World Cap"},
+          { "language": "ja", "text": "ワールドキャップ・ピカチュウ"},
+          { "language": "zh-Hant", "text": "皮卡丘（世界帽子)"},
+          { "language": "fr", "text": "Pikachu (Casquette Monde)"},
+          { "language": "de", "text": "Pikachu (Weltreise-Kappe)"},
+          { "language": "it", "text": "Pikachu Berretto Giramondo"},
+          { "language": "es", "text": "Pikachu con gorra Trotamundos"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Gigantamax Pikachu"},
+          { "language": "ja", "text": "キョダイマックス・ピカチュウ"},
+          { "language": "zh-Hant", "text": "皮卡丘 (超极巨化)"},
+          { "language": "fr", "text": "Pikachu Gigamax"},
+          { "language": "de", "text": "Gigadynamax-Pikachu"},
+          { "language": "it", "text": "Pikachu Gigamax"},
+          { "language": "es", "text": "Pikachu Gigamax"},
+          { "language": "ko", "text": "피카츄"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "forms": [
+      {
+        "names" : [
+          { "language": "en", "text": "Partner Eevee"},
+          { "language": "ja", "text": "イーブイ（相棒）"},
+          { "language": "zh-Hant", "text": "伊布"},
+          { "language": "fr", "text": "Évoli Partenaire"},
+          { "language": "de", "text": "Partner-Evoli"},
+          { "language": "it", "text": "Eevee (Let's Go)"},
+          { "language": "es", "text": "Eevee (Let's Go)"},
+          { "language": "ko", "text": "이브이"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": 351,
+    "forms": [
+      {
+        "names" : [
+          { "language": "en", "text": "Castform Sunny Form" },
+          { "language": "ja", "text": "ポワルン (たいようのすがた)"},
+          { "language": "zh-Hant", "text": "飄浮泡泡 (太陽的樣子)"},
+          { "language": "fr", "text": "Morphéo Forme Solaire"},
+          { "language": "de", "text": "Formeo Sonnenform"},
+          { "language": "it", "text": "Castform Forma Sole"},
+          { "language": "es", "text": "Castform Forma Sol"},
+          { "language": "ko", "text": "캐스퐁 (태양의 모습)"}
+        ],
+        "flavor_texts_keyword": [
+          { "language": "en", "text": "Sunny Form"},
+          { "language": "ja", "text": "たいようのすがた"},
+          { "language": "zh-Hant", "text": "太陽的樣子"},
+          { "language": "fr", "text": "Forme Solaire"},
+          { "language": "de", "text": "Sonnenform"},
+          { "language": "it", "text": "Forma Sole"},
+          { "language": "es", "text": "Forma sol"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Castform Rainy Form"},
+          { "language": "ja", "text": "ポワルン (あまみずのすがた)"},
+          { "language": "zh-Hant", "text": "飄浮泡泡 (雨水的樣子)"},
+          { "language": "fr", "text": "Morphéo Forme Eau de Pluie"},
+          { "language": "de", "text": "Formeo Regenform"},
+          { "language": "it", "text": "Castform Forma Pioggia"},
+          { "language": "es", "text": "Castform Forma Lluvia"},
+          { "language": "ko", "text": "캐스퐁 (빗방울의 모습)"}
+        ],
+        "flavor_texts_keyword": [
+          { "language": "en", "text": "Rainy Form"},
+          { "language": "ja", "text": "あまみずのすがた"},
+          { "language": "zh-Hant", "text": "雨水的樣子"},
+          { "language": "fr", "text": "Forme Eau de Pluie"},
+          { "language": "de", "text": "Regenform"},
+          { "language": "it", "text": "Forma Pioggia"},
+          { "language": "es", "text": "Forma lluvia"}
+        ]
+      },
+      {
+        "names" : [
+          { "language": "en", "text": "Castform Snowy Form"},
+          { "language": "ja", "text": "ポワルン (ゆきぐものすがた)"},
+          { "language": "zh-Hant", "text": "飄浮泡泡 (雪雲的樣子)"},
+          { "language": "fr", "text": "Forme Blizzard"},
+          { "language": "de", "text": "Formeo Schneeform"},
+          { "language": "it", "text": "Castform Forma Nuvola di Neve"},
+          { "language": "es", "text": "Castform Forma Nieve"},
+          { "language": "ko", "text": "캐스퐁 (설운의 모습)"}
+        ],
+        "flavor_texts_keyword": [
+          { "language": "en", "text": "Snowy Form"},
+          { "language": "ja", "text": "ゆきぐものすがた"},
+          { "language": "zh-Hant", "text": "雪雲的樣子"},
+          { "language": "fr", "text": "Forme Blizzard"},
+          { "language": "de", "text": "Schneeform"},
+          { "language": "it", "text": "Forma Nuvola di Neve"},
+          { "language": "es", "text": "Forma nieve"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": 382,
+    "forms": [
+      {
+        "english": "Primal Kyogre",
+        "names" : [
+          { "language": "ja", "text": "ゲンシカイオーガ"},
+          { "language": "zh-Hant", "text": "原始盖欧卡"},
+          { "language": "fr", "text": "Primo Kyogre"},
+          { "language": "de", "text": "Kyogre (Protomorphose)"},
+          { "language": "it", "text": "ArcheoKyogre"},
+          { "language": "es", "text": "Kyogre primigenio"},
+          { "language": "ko", "text": "가이오가"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": 383,
+    "forms": [
+      {
+        "english": "Primal Groudon",
+        "names" : [
+          { "language": "ja", "text": "ゲンシグラードン"},
+          { "language": "zh-Hant", "text": "原始固拉多"},
+          { "language": "fr", "text": "Primo Groudon"},
+          { "language": "de", "text": "Groudon (Protomorphose)"},
+          { "language": "it", "text": "ArcheoGroudon"},
+          { "language": "es", "text": "Groudon primigenio"},
+          { "language": "ko", "text": "그란돈"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": 386,
+    "forms": [
+      {
+        "english": "Deoxys Attack Forme",
+        "names" : [
+          { "language": "ja", "text": "デオキシス (アタックフォルム)"},
+          { "language": "zh-Hant", "text": "代歐奇希斯 (攻擊形態)"},
+          { "language": "fr", "text": "Deoxys Forme Attaque"},
+          { "language": "de", "text": "Deoxys Angriffsform"},
+          { "language": "it", "text": "Deoxys Forma Attacco"},
+          { "language": "es", "text": "Deoxys Forma Ataque"},
+          { "language": "ko", "text": "테오키스 (어택폼)"}
+        ]
+      },
+      {
+        "english": "Deoxys Defense Forme",
+        "names" : [
+          { "language": "ja", "text": "デオキシス (ディフェンスフォルム)"},
+          { "language": "zh-Hant", "text": "代歐奇希斯 (防禦形態)"},
+          { "language": "fr", "text": "Deoxys Forme Défense"},
+          { "language": "de", "text": "Deoxys Verteidigungsform"},
+          { "language": "it", "text": "Deoxys Forma Difesa"},
+          { "language": "es", "text": "Deoxys Forma Defensa"},
+          { "language": "ko", "text": "테오키스 (디펜스폼)"}
+        ]
+      },
+      {
+        "english": "Deoxys Speed Forme",
+        "names" : [
+          { "language": "ja", "text": "デオキシス (スピードフォルム)"},
+          { "language": "zh-Hant", "text": "代歐奇希斯 (速度形態)"},
+          { "language": "fr", "text": "Deoxys Forme Vitesse"},
+          { "language": "de", "text": "Deoxys Initiativeform"},
+          { "language": "it", "text": "Deoxys Forma Velocità"},
+          { "language": "es", "text": "Deoxys Forma Velocidad"},
+          { "language": "ko", "text": "테오키스 (스피드폼)"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": 412,
+    "forms": [
+      {
+        "english": "Burmy Sandy Cloak",
+        "names" : [
+          { "language": "ja", "text": "ミノムッチ (すなちのミノ)"},
+          { "language": "zh-Hant", "text": "结草儿 (砂土蓑衣)"},
+          { "language": "fr", "text": "Cheniti Cape Sable"},
+          { "language": "de", "text": "Burmy (Sandumhang)"},
+          { "language": "it", "text": "Burmy (Manto Sabbia)"},
+          { "language": "es", "text": "Burmy (Tronco arena)"},
+          { "language": "ko", "text": "도롱충이 (모래땅도롱)"}
+        ],
+        "flavor_texts": [
+          {
+            "game": "Legends: Arceus",
+            "texts": [
+              {"language": "ja", "text": "吐き出す 糸と 砂泥 練りあげ 蓑を こしらえる。 砂泥の蓑は 風雨に脆く 洞などに 隠れる。"},
+              {"language": "zh-Hant", "text": "将吐出的丝揉合泥沙制成蓑衣。泥沙所制的蓑衣不耐风雨，因此它会躲藏在洞穴等处。"},
+              {"language": "fr", "text": "Il pétrit du sable et de la boue avec les fils de soie qu'il génère pour se confectionner une cape. Mais le vent et la pluie pouvant abimer celle-ci, Cheniti se cache dans les crevasses et les grottes."},
+              {"language": "de", "text": "Seine sandige Haut ist so hart, dass etwaige Schnabelangriffe von Staralili mühelos an ihr abprallen."},
+              {"language": "it", "text": "È la forma di Castform quando grandina. Il suo corpo si raffredda e la sua pelle, in parte, è ghiacciata."},
+              {"language": "es", "text": "Es capaz de crear un abrigo con el limo y la hebra que regurgita. Como este no es idóneo para resguardarse del viento y la lluvia, se refugia en lugares como cuevas."}
+            ]
+          }
+        ]
+      },
+      {
+        "english": "Burmy Trash Cloak",
+        "names" : [
+          { "language": "ja", "text": "ミノムッチ (ゴミのミノ)"},
+          { "language": "zh-Hant", "text": "结草儿 (垃圾蓑衣)"},
+          { "language": "fr", "text": "Cheniti Cape Déchet"},
+          { "language": "de", "text": "Burmy (Lumpenumhang)"},
+          { "language": "it", "text": "Burmy (Manto Scarti)"},
+          { "language": "es", "text": "Burmy (Tronco basura)"},
+          { "language": "ko", "text": "도롱충이 (슈레도롱)"}
+        ],
+        "flavor_texts": [
+          {
+            "game": "Legends: Arceus",
+            "texts": [
+              {"language": "ja", "text": "手頃な 材料が 見つからぬと ちり芥にて 蓑を こしらえる。 存外 居心地は 悪くない模様。"},
+              {"language": "zh-Hant", "text": "当身边找不到适合的材料时，会用尘土草芥等垃圾来做蓑衣。裹起来的感觉似乎意外地还不坏。"},
+              {"language": "fr", "text": "Ce Pokémon passe inaperçu, car son corps constitué de détritus se fond dans le paysage. Il n'y a guère d'ensemble plus indiqué pour échapper aux prédateurs."},
+              {"language": "de", "text": "Da der Unrat, der Teil seines Körpers ist, mit der Umgebung verschmilzt, fällt es nicht auf. So ist es perfekt vor den Blicken seiner Fressfeinde geschützt."},
+              {"language": "it", "text": "È la forma di Castform quando grandina. Il suo corpo si raffredda e la sua pelle, in parte, è ghiacciata."},
+              {"language": "es", "text": "Si no encuentra materiales adecuados, rebusca en la basura y crea un manto con desechos. Parece que este es mucho más cómodo de lo que se pudiera creer."}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 413,
+    "forms": [
+      {
+        "english": "Wormadam Sandy Cloak",
+        "names" : [
+          { "language": "ja", "text": "ミノマダム (すなちのミノ)"},
+          { "language": "zh-Hant", "text": "結草貴婦 (砂土蓑衣)"},
+          { "language": "fr", "text": "Cheniselle Cape Sable"},
+          { "language": "de", "text": "Burmadame (Sandumhang)"},
+          { "language": "it", "text": "Wormadam (Manto Sabbia)"},
+          { "language": "es", "text": "Wormadam (Tronco arena)"},
+          { "language": "ko", "text": "도롱마담 (모래땅도롱)"}
+        ],
+        "flavor_texts": [
+          {
+            "game": "Legends: Arceus",
+            "texts": [
+              {"language": "ja", "text": "砂泥の皮膚は 相応に 硬く ムックルの嘴 程度ならば 易々と 弾き返すこと 造作なし。"},
+              {"language": "zh-Hant", "text": "泥沙形成的皮肤有相当的硬度。若是姆克儿的嘴喙程度的攻击，轻而易举就可以反弹回去。"},
+              {"language": "fr", "text": "Son épiderme de sable et de boue très solide peut aisément repousser les coups de bec des Étourmi."},
+              {"language": "de", "text": "Es speit Fäden aus, die es mit Sand und Schlamm zu einem Umhang verarbeitet. Dieser ist jedoch nicht sehr wetterfest, weshalb es Schutz in Höhlen und dergleichen sucht."},
+              {"language": "it", "text": "La sua cute arenosa è considerevolmente rigida, quanto basta a respingere senza pena colpi analoghi alle beccate degli Starly."},
+              {"language": "es", "text": "Su piel arenosa es lo bastante dura como para resistir y repeler sin problema alguno los picotazos de un Starly."}
+            ]
+          }
+        ]
+      },
+      {
+        "english": "Wormadam Trash Cloak",
+        "names" : [
+          { "language": "ja", "text": "ミノマダム (ゴミのミノ)"},
+          { "language": "zh-Hant", "text": "結草貴婦 (垃圾蓑衣)"},
+          { "language": "fr", "text": "Cheniselle Cape Déchet"},
+          { "language": "de", "text": "Burmadame (Lumpenumhang)"},
+          { "language": "it", "text": "Wormadam (Manto Scarti)"},
+          { "language": "es", "text": "Wormadam (Tronco basura)"},
+          { "language": "ko", "text": "도롱마담 (슈레도롱)"}
+        ],
+        "flavor_texts": [
+          {
+            "game": "Legends: Arceus",
+            "texts": [
+              {"language": "ja", "text": "ちり芥にて 構成されし体は 景色に 溶け込み 目立たず。 天敵より 身を 隠すに うってつけの様子。"},
+              {"language": "zh-Hant", "text": "尘土草芥等垃圾构成的身体能毫不起眼地融入周围景色之中，正好适合用来躲避天敌袭击。"},
+              {"language": "fr", "text": "Lorsqu'il ne trouve pas de matière première adéquate pour confectionner sa cape, il utilise des détritus. Sa cape est d'ailleurs bien plus douillette qu'elle n'y parait."},
+              {"language": "de", "text": "Findet es kein brauchbares Material, so fertigt es sich einen Umhang aus Unrat an, der sich dem Anschein nach als erstaunlich bequem erweist."},
+              {"language": "it", "text": "Non salta agli occhi per merito del corpo costituito da scorie, che si fonde coll'ambiente in perfetto mimetismo. Un attributo ideale per occultarsi agli inimici naturali."},
+              {"language": "es", "text": "Su cuerpo compuesto de residuos adopta el color del entorno y le sirve de camuflaje, por lo que resulta idóneo para evitar a los depredadores."}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 479,
+    "forms": [
+      {
+        "english": "Heat Rotom",
+        "names" : [
+          { "language": "ja", "text": "ヒートロトム"},
+          { "language": "zh-Hant", "text": "加熱洛托姆"},
+          { "language": "fr", "text": "Motisma Chaleur"},
+          { "language": "de", "text": "Hitze-Rotom"},
+          { "language": "it", "text": "Rotom Calore"},
+          { "language": "es", "text": "Rotom Calor"},
+          { "language": "ko", "text": "히트로토무"}
+        ],
+        "flavor_texts": [
+          {
+            "game": "Violet",
+            "texts": [
+              {"language": "ja", "text": "オーブンレンジに 入った 姿。 高温で あたりを 焼き焦がして 楽しそうに 笑っている。"},
+              {"language": "zh-Hant", "text": "如果在烈日下暴晒，就会变成这个样子。如果碰到它热烘烘的身体，会感觉干巴巴的。"},
+              {"language": "fr", "text": "Morphéo adopte cette apparence lorsqu'il y a du soleil. Son corps rougeoyant est très sec au toucher."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo bei einem heißen Sonnenbad an. Sein glühender Körper fühlt sich sehr trocken an."},
+              {"language": "it", "text": "Castform assume questa forma quando viene scaldato dai raggi del sole. Il suo corpo ardente è molto secco al tatto."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace sol. Su cuerpo ardiente es muy reseco al tacto."}
+            ]
+          },
+          {
+            "game": "Scarlet",
+            "texts": [
+              {"language": "ja", "text": "オーブンレンジ 自体の 調子が 悪いと 中に 入っている ロトムも 元気が なくなるのだ。"},
+              {"language": "zh-Hant", "text": "天气晴朗时飘浮泡泡的样子。在将它放到取暖器前的实验里，没有变成这个形态。"},
+              {"language": "fr", "text": "Morphéo adopte cette apparence uniquement les jours ensoleillés. On a tenté de reproduire ce phénomène avec un radiateur, sans succès."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo an sonnigen Tagen an. Versuche, diesen Wandel künstlich mit einem Heizstrahler herbeizuführen, schlugen fehl."},
+              {"language": "it", "text": "È la forma di Castform nei giorni di sole. Come dimostrato, non è sufficiente metterlo davanti a una stufa per farlo trasformare..."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace sol. Ponerlo delante de un radiador no basta para desencadenar esta transformación."}
+            ]
+          },
+          {
+            "game": "Legends: Arceus",
+            "texts": [
+              {"language": "ja", "text": "面妖な 釜に 潜みし フォルム。 釜の 出自については 不明。 炎 吹きて 悪事をなす 困り者。"},
+              {"language": "zh-Hant", "text": "尘土草芥等垃圾构成的身体能毫不起眼地融入周围景色之中，正好适合用来躲避天敌袭击。"},
+              {"language": "fr", "text": "Lorsqu'il ne trouve pas de matière première adéquate pour confectionner sa cape, il utilise des détritus. Sa cape est d'ailleurs bien plus douillette qu'elle n'y parait."},
+              {"language": "de", "text": "Findet es kein brauchbares Material, so fertigt es sich einen Umhang aus Unrat an, der sich dem Anschein nach als erstaunlich bequem erweist."},
+              {"language": "it", "text": "Non salta agli occhi per merito del corpo costituito da scorie, che si fonde coll'ambiente in perfetto mimetismo. Un attributo ideale per occultarsi agli inimici naturali."},
+              {"language": "es", "text": "Su cuerpo compuesto de residuos adopta el color del entorno y le sirve de camuflaje, por lo que resulta idóneo para evitar a los depredadores."}
+            ]
+          },
+          {
+            "game": "Sword",
+            "texts": [
+              {"language": "ja", "text": "とくしゅな モーターで うごく オーブンレンジに はいっている。 ほのおを あやつるのが とくい。"},
+              {"language": "zh-Hant", "text": "受惠于晴朗天气时的飘浮泡泡的样子。身体被照得暖洋洋的。"},
+              {"language": "fr", "text": "Morphéo prend cette apparence lorsqu'il y a du soleil. Son corps devient alors plus chaud."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo bei einem heißen Sonnenbad an. Sein glühender Körper fühlt sich sehr trocken an."},
+              {"language": "it", "text": "È la forma di Castform quando il sole brilla nel cielo. La temperatura del suo corpo sale e inizia a irradiare calore."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace un tiempo espléndido. Su cuerpo comienza a irradiar calor."}
+            ]
+          },
+          {
+            "game": "Shield",
+            "texts": [
+              {"language": "ja", "text": "おきにいりの ふくを こがす。 ねつを つかった わるさを たのしむ ロトムの すがた。"},
+              {"language": "zh-Hant", "text": "万里无云时飘浮泡泡的样子。如果接触到皮肤，会出人意料的热。所以要小心哦"},
+              {"language": "fr", "text": "Morphéo prend cette apparence les jours ensoleillés. Attention à ne pas le toucher dans cet état, car sa peau est très chaude."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo an sonnigen Tagen an. Versuche, diesen Wandel künstlich mit einem Heizstrahler herbeizuführen, schlugen fehl."},
+              {"language": "it", "text": "È la forma che Castform assume nei giorni di sole. Bisogna fare attenzione a toccarlo perché la sua pelle è più calda di quanto sembri."},
+              {"language": "es", "text": "Castform adopta esta forma cuando el sol brilla con fuerza. Conviene tener cuidado al tocarlo, ya que su piel alcanza altas temperaturas."}
+            ]
+          }
+        ]
+      },
+      {
+        "english": "Wash Rotom",
+        "names" : [
+          { "language": "ja", "text": "ウォッシュロトム"},
+          { "language": "zh-Hant", "text": "清洗洛托姆"},
+          { "language": "fr", "text": "Motisma Lavage"},
+          { "language": "de", "text": "Wasch-Rotom"},
+          { "language": "it", "text": "Rotom Lavaggio"},
+          { "language": "es", "text": "Rotom Lavado"},
+          { "language": "ko", "text": "워시로토무"}
+        ],
+        "flavor_texts": [
+          {
+            "game": "Violet",
+            "texts": [
+              {"language": "ja", "text": "すでに 生産中止のため ロトムが 入れる 洗濯機は 高値で 取引されているのだ。"},
+              {"language": "zh-Hant", "text": "如果在烈日下暴晒，就会变成这个样子。如果碰到它热烘烘的身体，会感觉干巴巴的。"},
+              {"language": "fr", "text": "Morphéo adopte cette apparence lorsqu'il y a du soleil. Son corps rougeoyant est très sec au toucher."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo bei einem heißen Sonnenbad an. Sein glühender Körper fühlt sich sehr trocken an."},
+              {"language": "it", "text": "Castform assume questa forma quando viene scaldato dai raggi del sole. Il suo corpo ardente è molto secco al tatto."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace sol. Su cuerpo ardiente es muy reseco al tacto."}
+            ]
+          },
+          {
+            "game": "Scarlet",
+            "texts": [
+              {"language": "ja", "text": "洗濯機に 入った 姿。 あたりを 水浸しにしては 満足そうに うなずいている。"},
+              {"language": "zh-Hant", "text": "天气晴朗时飘浮泡泡的样子。在将它放到取暖器前的实验里，没有变成这个形态。"},
+              {"language": "fr", "text": "Morphéo adopte cette apparence uniquement les jours ensoleillés. On a tenté de reproduire ce phénomène avec un radiateur, sans succès."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo an sonnigen Tagen an. Versuche, diesen Wandel künstlich mit einem Heizstrahler herbeizuführen, schlugen fehl."},
+              {"language": "it", "text": "È la forma di Castform nei giorni di sole. Come dimostrato, non è sufficiente metterlo davanti a una stufa per farlo trasformare..."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace sol. Ponerlo delante de un radiador no basta para desencadenar esta transformación."}
+            ]
+          },
+          {
+            "game": "Legends: Arceus",
+            "texts": [
+              {"language": "ja", "text": "珍奇な 箪笥に 潜みし フォルム。 箪笥 本来の 用途は 分からず。 冷水 撒きて 悪事をなす 困り者。"},
+              {"language": "zh-Hant", "text": "尘土草芥等垃圾构成的身体能毫不起眼地融入周围景色之中，正好适合用来躲避天敌袭击。"},
+              {"language": "fr", "text": "Lorsqu'il ne trouve pas de matière première adéquate pour confectionner sa cape, il utilise des détritus. Sa cape est d'ailleurs bien plus douillette qu'elle n'y parait."},
+              {"language": "de", "text": "Findet es kein brauchbares Material, so fertigt es sich einen Umhang aus Unrat an, der sich dem Anschein nach als erstaunlich bequem erweist."},
+              {"language": "it", "text": "Non salta agli occhi per merito del corpo costituito da scorie, che si fonde coll'ambiente in perfetto mimetismo. Un attributo ideale per occultarsi agli inimici naturali."},
+              {"language": "es", "text": "Su cuerpo compuesto de residuos adopta el color del entorno y le sirve de camuflaje, por lo que resulta idóneo para evitar a los depredadores."}
+            ]
+          },
+          {
+            "game": "Sword",
+            "texts": [
+              {"language": "ja", "text": "へやを みずびたしに する。 みずを いかした わるさを たのしむ ロトムの すがた。"},
+              {"language": "zh-Hant", "text": "受惠于晴朗天气时的飘浮泡泡的样子。身体被照得暖洋洋的。"},
+              {"language": "fr", "text": "Morphéo prend cette apparence lorsqu'il y a du soleil. Son corps devient alors plus chaud."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo bei einem heißen Sonnenbad an. Sein glühender Körper fühlt sich sehr trocken an."},
+              {"language": "it", "text": "È la forma di Castform quando il sole brilla nel cielo. La temperatura del suo corpo sale e inizia a irradiare calore."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace un tiempo espléndido. Su cuerpo comienza a irradiar calor."}
+            ]
+          },
+          {
+            "game": "Shield",
+            "texts": [
+              {"language": "ja", "text": "とくしゅな モーターで うごく せんたくきに はいっている。 ほうすいで あいてを いかく。"},
+              {"language": "zh-Hant", "text": "万里无云时飘浮泡泡的样子。如果接触到皮肤，会出人意料的热。所以要小心哦"},
+              {"language": "fr", "text": "Morphéo prend cette apparence les jours ensoleillés. Attention à ne pas le toucher dans cet état, car sa peau est très chaude."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo an sonnigen Tagen an. Versuche, diesen Wandel künstlich mit einem Heizstrahler herbeizuführen, schlugen fehl."},
+              {"language": "it", "text": "È la forma che Castform assume nei giorni di sole. Bisogna fare attenzione a toccarlo perché la sua pelle è più calda di quanto sembri."},
+              {"language": "es", "text": "Castform adopta esta forma cuando el sol brilla con fuerza. Conviene tener cuidado al tocarlo, ya que su piel alcanza altas temperaturas."}
+            ]
+          }
+        ]
+      },
+      {
+        "english": "Frost Rotom",
+        "names" : [
+          { "language": "ja", "text": "フロストロトム"},
+          { "language": "zh-Hant", "text": "結冰洛托姆"},
+          { "language": "fr", "text": "Motisma Froid"},
+          { "language": "de", "text": "Frost-Rotom"},
+          { "language": "it", "text": "Rotom Gelo"},
+          { "language": "es", "text": "Rotom Frío"},
+          { "language": "ko", "text": "프로스트로토무"}
+        ],
+        "flavor_texts": [
+          {
+            "game": "Violet",
+            "texts": [
+              {"language": "ja", "text": "冷蔵庫の 中に 入った 特殊な モーターが ロトムを フォルムチェンジさせる カギだ。"},
+              {"language": "zh-Hant", "text": "如果在烈日下暴晒，就会变成这个样子。如果碰到它热烘烘的身体，会感觉干巴巴的。"},
+              {"language": "fr", "text": "Morphéo adopte cette apparence lorsqu'il y a du soleil. Son corps rougeoyant est très sec au toucher."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo bei einem heißen Sonnenbad an. Sein glühender Körper fühlt sich sehr trocken an."},
+              {"language": "it", "text": "Castform assume questa forma quando viene scaldato dai raggi del sole. Il suo corpo ardente è molto secco al tatto."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace sol. Su cuerpo ardiente es muy reseco al tacto."}
+            ]
+          },
+          {
+            "game": "Scarlet",
+            "texts": [
+              {"language": "ja", "text": "冷蔵庫に 入った 姿。 冷気で あたりを 凍てつかせ 愉快そうに 跳ねまわっている。"},
+              {"language": "zh-Hant", "text": "天气晴朗时飘浮泡泡的样子。在将它放到取暖器前的实验里，没有变成这个形态。"},
+              {"language": "fr", "text": "Morphéo adopte cette apparence uniquement les jours ensoleillés. On a tenté de reproduire ce phénomène avec un radiateur, sans succès."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo an sonnigen Tagen an. Versuche, diesen Wandel künstlich mit einem Heizstrahler herbeizuführen, schlugen fehl."},
+              {"language": "it", "text": "È la forma di Castform nei giorni di sole. Come dimostrato, non è sufficiente metterlo davanti a una stufa per farlo trasformare..."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace sol. Ponerlo delante de un radiador no basta para desencadenar esta transformación."}
+            ]
+          },
+          {
+            "game": "Legends: Arceus",
+            "texts": [
+              {"language": "ja", "text": "奇怪な 水屋に 潜みし フォルム。 水屋の 素材は 未知の 物質。 霜 起こし 悪事をなす 困り者。"},
+              {"language": "zh-Hant", "text": "尘土草芥等垃圾构成的身体能毫不起眼地融入周围景色之中，正好适合用来躲避天敌袭击。"},
+              {"language": "fr", "text": "Lorsqu'il ne trouve pas de matière première adéquate pour confectionner sa cape, il utilise des détritus. Sa cape est d'ailleurs bien plus douillette qu'elle n'y parait."},
+              {"language": "de", "text": "Findet es kein brauchbares Material, so fertigt es sich einen Umhang aus Unrat an, der sich dem Anschein nach als erstaunlich bequem erweist."},
+              {"language": "it", "text": "Non salta agli occhi per merito del corpo costituito da scorie, che si fonde coll'ambiente in perfetto mimetismo. Un attributo ideale per occultarsi agli inimici naturali."},
+              {"language": "es", "text": "Su cuerpo compuesto de residuos adopta el color del entorno y le sirve de camuflaje, por lo que resulta idóneo para evitar a los depredadores."}
+            ]
+          },
+          {
+            "game": "Sword",
+            "texts": [
+              {"language": "ja", "text": "とくしゅな モーターで うごく れいぞうこに はいっている。 れいきを はきだし たたかう。"},
+              {"language": "zh-Hant", "text": "钻进由特殊马达驱动的电冰箱里的洛托姆。会吐出冷气战斗。"},
+              {"language": "fr", "text": "Morphéo prend cette apparence lorsqu'il y a du soleil. Son corps devient alors plus chaud."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo bei einem heißen Sonnenbad an. Sein glühender Körper fühlt sich sehr trocken an."},
+              {"language": "it", "text": "È la forma di Castform quando il sole brilla nel cielo. La temperatura del suo corpo sale e inizia a irradiare calore."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace un tiempo espléndido. Su cuerpo comienza a irradiar calor."}
+            ]
+          },
+          {
+            "game": "Shield",
+            "texts": [
+              {"language": "ja", "text": "ためた おふろを こおらせる。 れいき ならではの わるさを たのしむ ロトムの すがた。"},
+              {"language": "zh-Hant", "text": "万里无云时飘浮泡泡的样子。如果接触到皮肤，会出人意料的热。所以要小心哦"},
+              {"language": "fr", "text": "Morphéo prend cette apparence les jours ensoleillés. Attention à ne pas le toucher dans cet état, car sa peau est très chaude."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo an sonnigen Tagen an. Versuche, diesen Wandel künstlich mit einem Heizstrahler herbeizuführen, schlugen fehl."},
+              {"language": "it", "text": "È la forma che Castform assume nei giorni di sole. Bisogna fare attenzione a toccarlo perché la sua pelle è più calda di quanto sembri."},
+              {"language": "es", "text": "Castform adopta esta forma cuando el sol brilla con fuerza. Conviene tener cuidado al tocarlo, ya que su piel alcanza altas temperaturas."}
+            ]
+          }
+        ]
+      },
+      {
+        "english": "Fan Rotom",
+        "names" : [
+          { "language": "ja", "text": "スピンロトム"},
+          { "language": "zh-Hant", "text": "旋轉洛托姆"},
+          { "language": "fr", "text": "Motisma Hélice"},
+          { "language": "de", "text": "Wirbel-Rotom"},
+          { "language": "it", "text": "Rotom Vortice"},
+          { "language": "es", "text": "Rotom Ventilador"},
+          { "language": "ko", "text": "스핀로토무"}
+        ],
+        "flavor_texts": [
+          {
+            "game": "Violet",
+            "texts": [
+              {"language": "ja", "text": "ロトムが 入れる 家電製品は いくつか あるが いちばん 初めに 開発されたのは 扇風機だ。"},
+              {"language": "zh-Hant", "text": "如果在烈日下暴晒，就会变成这个样子。如果碰到它热烘烘的身体，会感觉干巴巴的。"},
+              {"language": "fr", "text": "Morphéo adopte cette apparence lorsqu'il y a du soleil. Son corps rougeoyant est très sec au toucher."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo bei einem heißen Sonnenbad an. Sein glühender Körper fühlt sich sehr trocken an."},
+              {"language": "it", "text": "Castform assume questa forma quando viene scaldato dai raggi del sole. Il suo corpo ardente è molto secco al tatto."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace sol. Su cuerpo ardiente es muy reseco al tacto."}
+            ]
+          },
+          {
+            "game": "Scarlet",
+            "texts": [
+              {"language": "ja", "text": "扇風機に 入った 姿。 あたりのものを 吹き飛ばしては してやったりと ほくそ笑んでいる。"},
+              {"language": "zh-Hant", "text": "天气晴朗时飘浮泡泡的样子。在将它放到取暖器前的实验里，没有变成这个形态。"},
+              {"language": "fr", "text": "Morphéo adopte cette apparence uniquement les jours ensoleillés. On a tenté de reproduire ce phénomène avec un radiateur, sans succès."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo an sonnigen Tagen an. Versuche, diesen Wandel künstlich mit einem Heizstrahler herbeizuführen, schlugen fehl."},
+              {"language": "it", "text": "È la forma di Castform nei giorni di sole. Come dimostrato, non è sufficiente metterlo davanti a una stufa per farlo trasformare..."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace sol. Ponerlo delante de un radiador no basta para desencadenar esta transformación."}
+            ]
+          },
+          {
+            "game": "Legends: Arceus",
+            "texts": [
+              {"language": "ja", "text": "謎の 器具に 潜みし フォルム。 器具の 用途は 分かっていない。 烈風 吐きて 悪事をなす 困り者。"},
+              {"language": "zh-Hant", "text": "尘土草芥等垃圾构成的身体能毫不起眼地融入周围景色之中，正好适合用来躲避天敌袭击。"},
+              {"language": "fr", "text": "Lorsqu'il ne trouve pas de matière première adéquate pour confectionner sa cape, il utilise des détritus. Sa cape est d'ailleurs bien plus douillette qu'elle n'y parait."},
+              {"language": "de", "text": "Findet es kein brauchbares Material, so fertigt es sich einen Umhang aus Unrat an, der sich dem Anschein nach als erstaunlich bequem erweist."},
+              {"language": "it", "text": "Non salta agli occhi per merito del corpo costituito da scorie, che si fonde coll'ambiente in perfetto mimetismo. Un attributo ideale per occultarsi agli inimici naturali."},
+              {"language": "es", "text": "Su cuerpo compuesto de residuos adopta el color del entorno y le sirve de camuflaje, por lo que resulta idóneo para evitar a los depredadores."}
+            ]
+          },
+          {
+            "game": "Sword",
+            "texts": [
+              {"language": "ja", "text": "だいじな しょるいを ふきとばす かぜに まかせた わるさを たのしむ ロトムの すがた。"},
+              {"language": "zh-Hant", "text": "会吹飞你重要的资料。喜欢利用刮风来恶作剧的洛托姆。"},
+              {"language": "fr", "text": "Morphéo prend cette apparence lorsqu'il y a du soleil. Son corps devient alors plus chaud."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo bei einem heißen Sonnenbad an. Sein glühender Körper fühlt sich sehr trocken an."},
+              {"language": "it", "text": "È la forma di Castform quando il sole brilla nel cielo. La temperatura del suo corpo sale e inizia a irradiare calore."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace un tiempo espléndido. Su cuerpo comienza a irradiar calor."}
+            ]
+          },
+          {
+            "game": "Shield",
+            "texts": [
+              {"language": "ja", "text": "とくしゅな モーターで うごく せんぷうきに はいっている。 とっぷうで てきを ふきとばす。"},
+              {"language": "zh-Hant", "text": "万里无云时飘浮泡泡的样子。如果接触到皮肤，会出人意料的热。所以要小心哦"},
+              {"language": "fr", "text": "Morphéo prend cette apparence les jours ensoleillés. Attention à ne pas le toucher dans cet état, car sa peau est très chaude."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo an sonnigen Tagen an. Versuche, diesen Wandel künstlich mit einem Heizstrahler herbeizuführen, schlugen fehl."},
+              {"language": "it", "text": "È la forma che Castform assume nei giorni di sole. Bisogna fare attenzione a toccarlo perché la sua pelle è più calda di quanto sembri."},
+              {"language": "es", "text": "Castform adopta esta forma cuando el sol brilla con fuerza. Conviene tener cuidado al tocarlo, ya que su piel alcanza altas temperaturas."}
+            ]
+          }
+        ]
+      },
+      {
+        "english": "Mow Rotom",
+        "names" : [
+          { "language": "ja", "text": "カットロトム"},
+          { "language": "zh-Hant", "text": "切割洛托姆"},
+          { "language": "fr", "text": "Motisma Tonte"},
+          { "language": "de", "text": "Schneid-Rotom"},
+          { "language": "it", "text": "Rotom Taglio"},
+          { "language": "es", "text": "Rotom Corte"},
+          { "language": "ko", "text": "커트로토무"}
+        ],
+        "flavor_texts": [
+          {
+            "game": "Violet",
+            "texts": [
+              {"language": "ja", "text": "芝刈り機に 入った 姿。 花や 草を なぎ払うと 自信満々に 威張っている。"},
+              {"language": "zh-Hant", "text": "如果在烈日下暴晒，就会变成这个样子。如果碰到它热烘烘的身体，会感觉干巴巴的。"},
+              {"language": "fr", "text": "Morphéo adopte cette apparence lorsqu'il y a du soleil. Son corps rougeoyant est très sec au toucher."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo bei einem heißen Sonnenbad an. Sein glühender Körper fühlt sich sehr trocken an."},
+              {"language": "it", "text": "Castform assume questa forma quando viene scaldato dai raggi del sole. Il suo corpo ardente è molto secco al tatto."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace sol. Su cuerpo ardiente es muy reseco al tacto."}
+            ]
+          },
+          {
+            "game": "Scarlet",
+            "texts": [
+              {"language": "ja", "text": "ロトム図鑑が 誕生する きっかけとなった 家電製品の ひとつが 芝刈り機なのだ。"},
+              {"language": "zh-Hant", "text": "天气晴朗时飘浮泡泡的样子。在将它放到取暖器前的实验里，没有变成这个形态。"},
+              {"language": "fr", "text": "Morphéo adopte cette apparence uniquement les jours ensoleillés. On a tenté de reproduire ce phénomène avec un radiateur, sans succès."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo an sonnigen Tagen an. Versuche, diesen Wandel künstlich mit einem Heizstrahler herbeizuführen, schlugen fehl."},
+              {"language": "it", "text": "È la forma di Castform nei giorni di sole. Come dimostrato, non è sufficiente metterlo davanti a una stufa per farlo trasformare..."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace sol. Ponerlo delante de un radiador no basta para desencadenar esta transformación."}
+            ]
+          },
+          {
+            "game": "Legends: Arceus",
+            "texts": [
+              {"language": "ja", "text": "異様な 猫車に 潜みし フォルム。 猫車の 機構は 不可思議なり。 草木を 薙ぎ 悪事をなす 困り者。"},
+              {"language": "zh-Hant", "text": "尘土草芥等垃圾构成的身体能毫不起眼地融入周围景色之中，正好适合用来躲避天敌袭击。"},
+              {"language": "fr", "text": "Lorsqu'il ne trouve pas de matière première adéquate pour confectionner sa cape, il utilise des détritus. Sa cape est d'ailleurs bien plus douillette qu'elle n'y parait."},
+              {"language": "de", "text": "Findet es kein brauchbares Material, so fertigt es sich einen Umhang aus Unrat an, der sich dem Anschein nach als erstaunlich bequem erweist."},
+              {"language": "it", "text": "Non salta agli occhi per merito del corpo costituito da scorie, che si fonde coll'ambiente in perfetto mimetismo. Un attributo ideale per occultarsi agli inimici naturali."},
+              {"language": "es", "text": "Su cuerpo compuesto de residuos adopta el color del entorno y le sirve de camuflaje, por lo que resulta idóneo para evitar a los depredadores."}
+            ]
+          },
+          {
+            "game": "Sword",
+            "texts": [
+              {"language": "ja", "text": "とくしゅな モーターで うごく しばかりきに はいっている。 かりとった くさを　まきちらす。"},
+              {"language": "zh-Hant", "text": "钻进由特殊马达驱动的割草机里的洛托姆。会把割下的草到处乱撒。"},
+              {"language": "fr", "text": "Morphéo prend cette apparence lorsqu'il y a du soleil. Son corps devient alors plus chaud."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo bei einem heißen Sonnenbad an. Sein glühender Körper fühlt sich sehr trocken an."},
+              {"language": "it", "text": "È la forma di Castform quando il sole brilla nel cielo. La temperatura del suo corpo sale e inizia a irradiare calore."},
+              {"language": "es", "text": "Castform adopta esta forma cuando hace un tiempo espléndido. Su cuerpo comienza a irradiar calor."}
+            ]
+          },
+          {
+            "game": "Shield",
+            "texts": [
+              {"language": "ja", "text": "そだてた おはなを かりとる。 くさに かんする わるさを たのしむ ロトムの すがた。"},
+              {"language": "zh-Hant", "text": "万里无云时飘浮泡泡的样子。如果接触到皮肤，会出人意料的热。所以要小心哦"},
+              {"language": "fr", "text": "Morphéo prend cette apparence les jours ensoleillés. Attention à ne pas le toucher dans cet état, car sa peau est très chaude."},
+              {"language": "de", "text": "Diese Gestalt nimmt Formeo an sonnigen Tagen an. Versuche, diesen Wandel künstlich mit einem Heizstrahler herbeizuführen, schlugen fehl."},
+              {"language": "it", "text": "È la forma che Castform assume nei giorni di sole. Bisogna fare attenzione a toccarlo perché la sua pelle è più calda di quanto sembri."},
+              {"language": "es", "text": "Castform adopta esta forma cuando el sol brilla con fuerza. Conviene tener cuidado al tocarlo, ya que su piel alcanza altas temperaturas."}
+            ]
+          }
+        ]
+      },
+      {
+        "english": "Hoopa Unbound",
+        "names" : [
+          { "language": "ja", "text": "カットロトム"},
+          { "language": "zh-Hant", "text": "切割洛托姆"},
+          { "language": "fr", "text": "Motisma Tonte"},
+          { "language": "de", "text": "Schneid-Rotom"},
+          { "language": "it", "text": "Rotom Taglio"},
+          { "language": "es", "text": "Rotom Corte"},
+          { "language": "ko", "text": "커트로토무"}
+        ]
+      }
+    ]
+  }
+]
