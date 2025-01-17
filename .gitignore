@@ -134,3 +134,6 @@ cache/
 
 # Generated data
 data.json
+
+# Test data
+tests/result.json

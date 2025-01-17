@@ -1,4 +1,4 @@
-import type { EggGroup } from '../../class/egg_group.ts'
+import type { EggGroup } from '../../class/eggGroup.ts'
 
 export function getEggGroups ($ : cheerio.Root) : EggGroup[] {
   const eggGroups : EggGroup[] = []

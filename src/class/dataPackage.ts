@@ -1,6 +1,6 @@
-import { Item } from './class/item.ts'
-import { Ability } from './class/ability.ts'
-import { Pokemon } from './class/pokemon.ts'
+import { Item } from './item.ts'
+import { Ability } from './ability.ts'
+import { Pokemon } from './pokemon.ts'
 
 export class DataPackage {
   constructor (abilities : Ability[], items : Item[], pokemon : Pokemon[]) {

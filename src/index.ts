@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { DataPackage } from './data_package.ts'
+import { DataPackage } from './class/dataPackage.ts'
 import { ItemFetcher } from './fetcher/item/item.ts'
 import { PokemonFetcher } from './fetcher/pokemon/pokemon.ts'
 import { AbilityFetcher } from './fetcher/ability/ability.ts'

@@ -1,5 +1,7 @@
-export function getFRGameName (gameName : string) : string[] {
-  const games = []
+import type { Game } from '../../../class/games.ts'
+
+export function getFRGameName (gameName : string) : Game[] {
+  const games : Game[] = []
   if (gameName.search('Rouge') !== -1 && gameName.search('Rouge Feu') === -1) {
     games.push('Red')
   }
@@ -114,8 +116,8 @@ export function getFRGameName (gameName : string) : string[] {
   return games
 }
 
-export function getDEGameName (gameName : string) : string[] {
-  const games = []
+export function getDEGameName (gameName : string[]) : Game[] {
+  const games : Game[] = []
   if (gameName.includes('Pokémon Rot')) {
     games.push('Red')
   }
@@ -230,8 +232,8 @@ export function getDEGameName (gameName : string) : string[] {
   return games
 }
 
-export function getITGameName (gameName : string) : string[] {
-  const games = []
+export function getITGameName (gameName : string) : Game[] {
+  const games : Game[] = []
   if (gameName.includes('Rosso')) {
     games.push('Red')
   }
@@ -346,8 +348,8 @@ export function getITGameName (gameName : string) : string[] {
   return games
 }
 
-export function getESGameName (gameName : string) : string[] {
-  const games = []
+export function getESGameName (gameName : string) : Game[] {
+  const games : Game[] = []
   if (gameName.includes('Rojo')) {
     games.push('Red')
   }

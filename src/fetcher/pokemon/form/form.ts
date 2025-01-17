@@ -2,15 +2,12 @@ import { isVisible } from '../../utils.ts'
 import { ManualForm } from './manual_form.ts'
 import { Name } from '../../../class/name.ts'
 import { Sprite } from '../../../class/sprite.ts'
-import type { PokemonFormType } from '../../../class/pokemon_form.ts'
+import { Pokemon } from '../../../class/pokemon.ts'
+import type { PokemonFormType } from '../../../class/pokemonForm.ts'
 
-export class PokemonForm {
-  public names : Name[]
-  public form_type : PokemonFormType
-  public form_name : string
-  public sprites : Sprite[]
-
+export class PokemonForm extends Pokemon{
   private constructor (names : Name[], form_type : PokemonFormType, form_name : string, sprites : Sprite[]) {
+    super()
     this.names = names
     this.form_type = form_type
     this.form_name = form_name
@@ -18,6 +15,7 @@ export class PokemonForm {
   }
 
   public static add (forms : PokemonForm[], fullName : string, spriteURL : string | undefined, formType : PokemonFormType, baseName : string, isDefault : boolean, formName : string | undefined) {
+    console.log(fullName)
     fullName = fullName.replaceAll(String.fromCharCode(160), ' ')
     if (formName === undefined) {
       formName = fullName
@@ -79,7 +77,7 @@ export class PokemonForm {
           }
           const lowerCaseName = fullName.toLowerCase()
           let formType : PokemonFormType = 'other'
-          console.log(formType)
+
           if (lowerCaseName.includes('mega')) {
             formType = 'mega'
           } else if (lowerCaseName.includes('gigantamax')) {
@@ -95,7 +93,6 @@ export class PokemonForm {
           } else if (index === 0) {
             formType = 'default'
           }
-          console.log(formType)
           forms = [...forms, ...this.addManually($, fullName, spriteURL, formType, baseName)]
         })
       })

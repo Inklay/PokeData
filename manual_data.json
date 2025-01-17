@@ -12,6 +12,15 @@
           { "language": "it", "text": "Pikachu (Let's Go)"},
           { "language": "es", "text": "Pikachu (Let's Go)"},
           { "language": "ko", "text": "피카츄"}
+        ],
+        "flavor_texts_keyword": [
+          { "language": "en", "text": "Sunny Form"},
+          { "language": "ja", "text": "たいようのすがた"},
+          { "language": "zh-Hant", "text": "太陽的樣子"},
+          { "language": "fr", "text": "Forme Solaire"},
+          { "language": "de", "text": "Sonnenform"},
+          { "language": "it", "text": "Forma Sole"},
+          { "language": "es", "text": "Forma sol"}
         ]
       },
       {

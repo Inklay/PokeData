@@ -1,13 +1,10 @@
 import { load } from 'cheerio'
+import { Category } from '../category.ts'
 import { Name } from '../../../class/name.ts'
 
-export class TranslatedCategory {
-  public form : string
-  public categories : Name[]
-
+export class TranslatedCategory extends Category {
   public constructor (form : string, categories : Name[]) {
-    this.form = form
-    this.categories = categories
+    super(form, categories)
   }
 
   static async getTranslation ($ : cheerio.Root, name : Name) : Promise<TranslatedCategory[]> {
