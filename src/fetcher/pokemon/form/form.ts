@@ -98,11 +98,22 @@ export class PokemonForm extends Pokemon {
     return forms
   }
 
+  private static addPikachuInACap ($ : cheerio.Root, tableId: string, forms : PokemonForm[], formType : PokemonFormType, baseName : string, fullName : string) {
+    $(`span#${tableId}`)
+      .parent()
+      .next('p')
+      .next('div')
+      .children('div')
+      .each((__, element) => {
+        const name = $(element).children('div:nth-child(1)').text()
+        const spriteUrl = $(element).children('div:nth-child(2)').children('a').children('img').attr('src')!
+        this.add(forms, name, spriteUrl, formType, baseName, false, fullName)
+      })
+  }
+
   private static addCosplayPikachu ($ : cheerio.Root, tableId: string, forms : PokemonForm[], formType : PokemonFormType, baseName : string, fullName : string) {
     $(`span#${tableId}`)
     .parent()
-    .next('p')
-    .next('table')
     .next('p')
     .next('p')
     .next('div')
@@ -135,14 +146,22 @@ export class PokemonForm extends Pokemon {
   private static addManually ($ : cheerio.Root, fullName : string, spriteURL : string | undefined, formType : PokemonFormType, baseName : string) : PokemonForm[] {
     const forms : PokemonForm[] = []
     const formInfo = ManualForm.getInfo(fullName)
+
     if (formInfo.tableId === '') {
       this.add(forms, fullName, spriteURL, formType, baseName, formType === 'default', undefined)
       return forms
     }
+
     if (formInfo.isCosplayPikachu) {
       this.addCosplayPikachu($, formInfo.tableId, forms, formType, baseName, fullName)
       return forms
     }
+
+    if (formInfo.isPikachuInACap) {
+      this.addPikachuInACap($, formInfo.tableId, forms, formType, baseName, fullName)
+      return forms
+    }
+
     let table = $(`span#${formInfo.tableId}`).parent()
     const names : string[] = []
     while (($(table)[0] as cheerio.TagElement).name !== 'table') {
