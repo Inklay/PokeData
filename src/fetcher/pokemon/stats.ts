@@ -31,7 +31,7 @@ export class PokemonStats {
   }
 
   public static get ($ : cheerio.Root) : PokemonStats[] {
-    let statsId
+    let statsId : string | undefined
     let element
     const stats : PokemonStats[] = []
     $('a[href=\'#Game_data\']')
@@ -42,11 +42,13 @@ export class PokemonStats {
           .children('a')
           .children('span')
           .each((__, link) => {
-            if ($(link).attr('class') === 'toctext' && ($(link).text() === 'PokemonStats' || $(link).text() === 'Base stats')) {
+            if ($(link).attr('class') === 'toctext' && ($(link).text().toLocaleLowerCase() === 'PokemonStats' || $(link).text().toLocaleLowerCase() === 'stats')) {
               statsId = $(link).parent().attr('href')
+              return
             }
           })
       })
+
     const header = $(`span${statsId}`)
       .parent()
       .next()
@@ -66,15 +68,15 @@ export class PokemonStats {
       element = header
     }
     let tagName = ($(element)[0] as cheerio.TagElement).name
-    while ($(element)[0] !== undefined && tagName !== 'h4') {
-      if (tagName === 'h3' && $(element).text() !== 'Base stats') {
+    while ($(element)[0] !== undefined && tagName !== 'h3') {
+      if (tagName === 'h4' && $(element).text() !== 'Base stats') {
         break
       }
       // Older gen
-      if (tagName === 'h5' && $(element).text().includes('Generation') && !$(element).text().includes('onward') && !$(element).text().includes('IX')) {
+      if (tagName === 'h6' && $(element).text().includes('Generation') && !$(element).text().includes('onward') && !$(element).text().includes('IX')) {
         skip = true
       // Current gen
-      } else if (tagName === 'h5' && ($(element).text().includes('onward') || $(element).text().includes('IX'))) {
+      } else if (tagName === 'h6' && ($(element).text().includes('onward') || $(element).text().includes('IX'))) {
         skip = false
       } else if (tagName === 'h5') {
         name = $(element).text()
@@ -84,6 +86,7 @@ export class PokemonStats {
         stats.push(new PokemonStats(this.processStatsTable($, element), name))
       }
       element = $(element).next()
+      tagName = ($(element)[0] as cheerio.TagElement).name
     }
     return stats
   }

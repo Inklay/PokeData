@@ -1,20 +1,17 @@
 import { load } from 'cheerio'
 import { Name } from '../../../class/name.ts'
 import type { Game } from '../../../class/games.ts'
-import type { ManualDataForm } from '../manual_data/form.ts'
-import type { languageCode } from '../../../class/language.ts'
+import { PokemonPokedexEntry } from '../pokedexEntry.ts'
+import type { ManualDataForm } from '../manualData/form.ts'
 import { PokedexEntry } from '../../../class/pokedexEntry.ts'
+import type { languageCode } from '../../../class/language.ts'
 import { getDEGameName, getESGameName, getFRGameName, getITGameName } from './TranslateGameName.ts'
 
-export class TranslatedPokedexEntries {
-  public entries : PokedexEntry[]
-  public form : string
-
+export class TranslatedPokedexEntries extends PokemonPokedexEntry {
   constructor (form : string) {
-    this.entries = []
-    this.form = form
+    super(form)
   }
-  
+
   public static async getTranslation ($ : cheerio.Root, name : Name, keywords : ManualDataForm[]) : Promise<TranslatedPokedexEntries[]> {
     switch (name.language) {
       case 'fr':
@@ -51,7 +48,6 @@ export class TranslatedPokedexEntries {
     if (value.toLowerCase() === defaultFormName) {
       return 'default'
     }
-    console.log(value)
     for (let i = 0; i < keywords.length; i++) {
       if (keywords[i]!.flavor_texts_keyword === undefined) {
         continue

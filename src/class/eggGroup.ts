@@ -6,13 +6,15 @@ enum EggGroupEnum {
   'Bug',
   'Flying',
   'Grass',
-  'Human_Like',
+  'Human-Like',
   'Mineral',
   'Amorphous',
   'Dragon',
   'Ditto',
   'No Eggs Discovered',
-  'Field'
+  'Field',
+  'Fairy',
+  'Gender unknown'
 }
 
 export type EggGroup = keyof typeof EggGroupEnum

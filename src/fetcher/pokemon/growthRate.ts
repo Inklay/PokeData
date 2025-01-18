@@ -1,4 +1,4 @@
-export function getGrowthRate ($ : cheerio.Root) {
+export function getGrowthRate ($ : cheerio.Root) : string {
   let rate
   $('td.roundy > b > a[title=\'Experience\'] > span')
     .each((__, element) => {
@@ -17,5 +17,5 @@ export function getGrowthRate ($ : cheerio.Root) {
         .toLowerCase()
         .slice(0, -1)
     })
-  return rate
+  return rate!
 }

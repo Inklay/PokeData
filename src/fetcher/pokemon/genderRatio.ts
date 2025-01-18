@@ -1,5 +1,5 @@
-export function getGenderRatio ($ : cheerio.Root) {
-  let femaleRatio : string = ''
+export function getGenderRatio ($ : cheerio.Root) : number {
+  let femaleRatio : string | undefined
   $('a[title=\'List of Pokémon by gender ratio\']')
     .parent()
     .next('table')
@@ -11,6 +11,7 @@ export function getGenderRatio ($ : cheerio.Root) {
         femaleRatio = ratioText
       }
     })
+
   if (femaleRatio === '100% female') {
     return 8
   }

@@ -34,7 +34,13 @@ export class PokemonFetcherAbility {
           }
         }
         $(element).children('a').each((__, link) => {
-          const ability = abilities.find(ability => ability.names[0]!.text === $(link).text())
+          const ability = abilities.find(ability => {
+            let name = ability.names.find(name => name.language === 'en')
+            if (name === undefined) {
+              return false
+            }
+            return name.text === $(link).text()
+          })
           if (ability === undefined) {
             return [{
               ability: -1,

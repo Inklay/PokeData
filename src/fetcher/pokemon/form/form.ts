@@ -1,21 +1,20 @@
 import { isVisible } from '../../utils.ts'
-import { ManualForm } from './manual_form.ts'
+import { ManualForm } from './manualForm.ts'
 import { Name } from '../../../class/name.ts'
 import { Sprite } from '../../../class/sprite.ts'
 import { Pokemon } from '../../../class/pokemon.ts'
 import type { PokemonFormType } from '../../../class/pokemonForm.ts'
 
-export class PokemonForm extends Pokemon{
+export class PokemonForm extends Pokemon {
   private constructor (names : Name[], form_type : PokemonFormType, form_name : string, sprites : Sprite[]) {
     super()
     this.names = names
-    this.form_type = form_type
-    this.form_name = form_name
+    this.formType = form_type
+    this.formName = form_name
     this.sprites = sprites
   }
 
   public static add (forms : PokemonForm[], fullName : string, spriteURL : string | undefined, formType : PokemonFormType, baseName : string, isDefault : boolean, formName : string | undefined) {
-    console.log(fullName)
     fullName = fullName.replaceAll(String.fromCharCode(160), ' ')
     if (formName === undefined) {
       formName = fullName
@@ -137,7 +136,7 @@ export class PokemonForm extends Pokemon{
     const forms : PokemonForm[] = []
     const formInfo = ManualForm.getInfo(fullName)
     if (formInfo.tableId === '') {
-      this.add(forms, fullName, spriteURL, formType, baseName, true, undefined)
+      this.add(forms, fullName, spriteURL, formType, baseName, formType === 'default', undefined)
       return forms
     }
     if (formInfo.isCosplayPikachu) {
