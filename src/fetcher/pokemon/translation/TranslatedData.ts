@@ -18,20 +18,20 @@ export class TranslatedData {
 
   public static async getTranslatedData (translatedNames : Name[], manualData : ManualData[], id : number) : Promise<TranslatedData> {
     const data = new TranslatedData
-    // for (let i = 0; i < translatedNames.length; i++) {
-    //   const URL = `${wikis.get(translatedNames[i]!.language)}${translatedNames[i]!.text}`
-    //   if (URL === undefined) {
-    //     continue
-    //   }
-    //   const pageHTML = await (await fetch(URL)).text()
-    //   const $ = load(pageHTML)
-    //   const newCategories = await TranslatedCategory.getTranslation($, translatedNames[i]!)
-    //   Category.append(data.category, newCategories)
+    for (let i = 0; i < translatedNames.length; i++) {
+      const URL = `${wikis.get(translatedNames[i]!.language)}${translatedNames[i]!.text}`
+      if (URL === undefined) {
+        continue
+      }
+      const pageHTML = await (await fetch(URL)).text()
+      const $ = load(pageHTML)
+      const newCategories = await TranslatedCategory.getTranslation($, translatedNames[i]!)
+      Category.append(data.category, newCategories)
 
-    //   const manualForm = manualData.find(data => data.id === id)
-    //   const newPokedexEntries = await TranslatedPokedexEntries.getTranslation($, translatedNames[i]!, manualForm ? manualForm.forms : [])
-    //   PokemonPokedexEntry.append(data.entries, newPokedexEntries)
-    // }
+      const manualForm = manualData.find(data => data.id === id)
+      const newPokedexEntries = await TranslatedPokedexEntries.getTranslation($, translatedNames[i]!, manualForm ? manualForm.forms : [])
+      PokemonPokedexEntry.append(data.entries, newPokedexEntries)
+    }
     return data
   }
 }

@@ -87,12 +87,12 @@ export class TranslatedCategory extends Category {
     const data : TranslatedCategory[] = []
     const categoryElement = $('a[title=\'Kategorie (Pokémoneigenschaft)\']').parent().next('td')
     if ($(categoryElement).children('br').length === 0) {
-      data.push(new TranslatedCategory('default', [new Name('de', $(categoryElement).text())]))
+      data.push(new TranslatedCategory('default', [new Name('de', $(categoryElement).text().replaceAll('\n', ''))]))
     } else {
       let form: string
       let category: string
       $(categoryElement).contents().each((index, value) => {
-        const text = $(value).text().replace('\n', '')
+        const text = $(value).text().replaceAll('\n', '')
         if (index % 2 === 0) {
           category = text
         } else {
@@ -216,7 +216,10 @@ export class TranslatedCategory extends Category {
       }
     })
     $('a[title=\'分类\']').each((index, value) => {
-      if (index >= formContainer.length) {
+      if (formName.length === 0) {
+        formName.push('default')
+      }
+      if (index >= formContainer.length && index !== 0 && formContainer.length !== 0) {
         return
       }
       const name = $(value).parent().next().text().trim().replace('\n', '')

@@ -40,7 +40,7 @@ export class TranslatedPokedexEntries extends PokemonPokedexEntry {
 
   private static insertEntry (games : Game[], form : string, data : TranslatedPokedexEntries[], entry : string, language : languageCode) {
     for (let i = 0; i < games.length; i++) {
-      data[this.getIndexOf(form, data)]!.entries.push(new PokedexEntry(games[i]!, new Name(language, entry)))
+      this.addEntry(data[this.getIndexOf(form, data)]!.entries, new Name(language, entry), games[i]!)
     }
   }
 
@@ -93,7 +93,7 @@ export class TranslatedPokedexEntries extends PokemonPokedexEntry {
             const text = $gen(entry).text().replace('\n', '')
             if (($gen(entry)[0] as cheerio.TagElement).name === 'dt') {
               games = getFRGameName(text)
-            } else if (($gen(entry)[0] as cheerio.TagElement).name === 'dd') {
+            } else if (($gen(entry)[0] as cheerio.TagElement).name === 'dd' && $($gen(entry)[0]).children('i').length === 0) {
               this.insertEntry(games, form!, data, text, 'fr')
             }
             entry = $gen(entry).next()

@@ -1,4 +1,5 @@
 import fs from 'fs'
+import { testNames } from './utils.ts'
 import { testAllItems } from './item.ts'
 import { Item } from '../src/class/item.ts'
 import { testAllAbilities } from './ability.ts'
@@ -46,16 +47,7 @@ export async function testAllPokemon (abilities: undefined | Ability[] = undefin
     console.assert(data.length > 0)
     for (let j = 0; j < data.length; j++) {
       // Name
-      console.assert(data[j]!.names !== undefined, `${pokemonURLList[i]}, form ${j}: Names undefined`)
-      console.assert(data[j]!.names.length !== 0, `${pokemonURLList[i]}, form ${j}: Names empty`)
-      console.assert(data[j]!.names.find(name => name.language === 'en') !== undefined, `${pokemonURLList[i]}, form ${j}: No english name`)
-      console.assert(data[j]!.names.find(name => name.language === 'en')!.text !== '', `${pokemonURLList[i]}, form ${j}: English name empty`)
-      // console.assert(data[j]!.names.find(name => name.language === 'fr') !== undefined, `${data[j]!.names[0]!.text}, form ${j}: No french name`)
-      // console.assert(data[j]!.names.find(name => name.language === 'es') !== undefined, `${data[j]!.names[0]!.text}, form ${j}: No spanish name`)
-      // console.assert(data[j]!.names.find(name => name.language === 'de') !== undefined, `${data[j]!.names[0]!.text}, form ${j}: No german name`)
-      // console.assert(data[j]!.names.find(name => name.language === 'ja') !== undefined, `${data[j]!.names[0]!.text}, form ${j}: No japanese name`)
-      // console.assert(data[j]!.names.find(name => name.language === 'ko') !== undefined, `${data[j]!.names[0]!.text}, form ${j}: No korean name`)
-      // console.assert(data[j]!.names.find(name => name.language === 'zh-Hant') !== undefined, `${data[j]!.names[0]!.text}, form ${j}: No chinese name`)
+      testNames(data[j]!.names, `${pokemonURLList[i]!}, ${j}`, 'Name')
       // Dex numbers
       console.assert(data[j]!.dexNumbers !== undefined, `${data[j]!.names[0]!.text}: Dex numbers undefined`)
       console.assert(data[j]!.dexNumbers.nat !== undefined, `${data[j]!.names[0]!.text}: Nat dex numbers undefined`)
@@ -88,13 +80,13 @@ export async function testAllPokemon (abilities: undefined | Ability[] = undefin
       console.assert(data[j]!.growthRate !== undefined, `${data[j]!.names[0]!.text}: Growth rate undefined`)
       console.assert(data[j]!.growthRate !== '', `${data[j]!.names[0]!.text}: Growth rate empty`)
       // Cateory
-      console.assert(data[j]!.category !== undefined, `${data[j]!.names[0]!.text}: Category undefined`)
-      console.assert(data[j]!.category.length !== 0, `${data[j]!.names[0]!.text}: Category empty`)
-      console.assert(data[j]!.category[0]!.text !== undefined, `${data[j]!.names[0]!.text}: English category undefined`)
-      console.assert(data[j]!.category[0]!.text !== '', `${data[j]!.names[0]!.text}: English category empty`)
+      testNames(data[j]!.category, data[j]!.names[0]!.text, 'Category')
       // Flavor text
       console.assert(data[j]!.pokedexEntries !== undefined, `${data[j]!.names[0]!.text}: Flavor text undefined`)
       console.assert(data[j]!.pokedexEntries.length !== 0, `${data[j]!.names[0]!.text}: Flavor text empty`)
+      // data[j]!.pokedexEntries.forEach(entry => {
+      //   testNames(entry.text, data[j]!.names[0]!.text, `${entry.game} pokedex`)
+      // })
       // Stats
       console.assert(data[j]!.stats !== undefined, `${data[j]!.names[0]!.text}: Stats undefined`)
       console.assert(data[j]!.stats.length >= 5, `${data[j]!.names[0]!.text}: Stats invalid -> ${data[j]!.stats}`)

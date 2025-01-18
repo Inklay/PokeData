@@ -141,20 +141,6 @@ export class PokemonFetcher extends Pokemon {
               ...form.names,
               ...formData.names
             ]
-            // if (formData.flavor_texts !== undefined) {
-            //   for (let j = 0; j < formData.flavor_texts.length; j++) {
-            //     const formText = flavorText.find(text => text.form === form.names[0].name)
-            //     if (formText !== undefined) {
-            //       const gameText = formText.entries.find(entry => entry.game === formData.flavor_texts[j].game)
-            //       if (gameText !== undefined) {
-            //         gameText.texts = [
-            //           ...gameText.texts,
-            //           ...formData.flavor_texts[j].texts
-            //         ]
-            //       }
-            //     }
-            //   }
-            // }
           }
         }
       } else if (form.formType === 'default') {

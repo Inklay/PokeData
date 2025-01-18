@@ -17,14 +17,31 @@ export class PokemonPokedexEntry {
     b.forEach(entry => {
       const alreadyExisting = a.find(x => x.form === entry.form)
       if (alreadyExisting !== undefined) {
-        alreadyExisting.entries = [
-          ...alreadyExisting.entries,
-          ...entry.entries
-        ]
+        entry.entries.forEach(formEntry => {
+          const alreadyExistingGameEntry = alreadyExisting.entries.find(x => x.game === formEntry.game)
+          if (alreadyExistingGameEntry !== undefined) {
+            alreadyExistingGameEntry.text = [
+              ...alreadyExistingGameEntry.text,
+              ...formEntry.text
+            ]
+          } else {
+            alreadyExisting.entries.push(formEntry)
+          }
+        })
       } else {
         a.push(entry)
       }
     })
+  }
+
+  public static addEntry (entries : PokedexEntry[], name : Name, game : Game) {
+    name.text = name.text.replaceAll('\n', '')
+    const alreadyExisting = entries.find(x => x.game === game)
+    if (alreadyExisting !== undefined) {
+      alreadyExisting.text.push(name)
+    } else {
+      entries.push(new PokedexEntry(game, [name]))
+    }
   }
 
   private static romanToInt (romanNumber : string) : number {
@@ -171,7 +188,7 @@ export class PokemonPokedexEntry {
         form: `Pikachu ${region} Cap`,
         entries: []
       }) - 1
-      flavorText[formIndex]!.entries.push(new PokedexEntry(game, new Name('en', text.replace('Hoenn/Sinnoh/Unova/Kalos/Alola', region))))
+      this.addEntry(flavorText[formIndex]!.entries, new Name('en', text.replace('Hoenn/Sinnoh/Unova/Kalos/Alola', region)), game)
     }
   }
   
@@ -180,13 +197,13 @@ export class PokemonPokedexEntry {
     for (const color of colors) {
       if (flavorText.find(form => form.form === `Minior ${color} Core`) !== undefined) {
         const formIndex = flavorText.findIndex(form => form.form === `Minior ${color} Core`)
-        flavorText[formIndex]!.entries.push(new PokedexEntry(game, new Name('en', text)))
+        this.addEntry(flavorText[formIndex]!.entries, new Name('en', text), game)
       } else {
         const formIndex = flavorText.push({
           form: `Minior ${color} Core`,
           entries: []
         }) - 1
-        flavorText[formIndex]!.entries.push(new PokedexEntry(game, new Name('en', text)))
+        this.addEntry(flavorText[formIndex]!.entries, new Name('en', text), game)
       }
     }
   }
@@ -259,7 +276,7 @@ export class PokemonPokedexEntry {
               } else if (form === 'All Cores') {
                 this.processMiniorFlavorText(gameName as Game, oldText, flavorText)
               } else {
-                flavorText[formIndex]!.entries.push(new PokedexEntry(gameName as Game, new Name('en', oldText)))
+                this.addEntry(flavorText[formIndex]!.entries, new Name('en', oldText), gameName as Game)
               }
             }
           })

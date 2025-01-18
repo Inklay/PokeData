@@ -30,10 +30,10 @@ export function getFRGameName (gameName : string) : Game[] {
     games.push('Emerald')
   }
   if (gameName.search('Rouge Feu') !== -1) {
-    games.push('Firered')
+    games.push('FireRed')
   }
   if (gameName.search('Vert Feuille') !== -1) {
-    games.push('Leafgreen')
+    games.push('LeafGreen')
   }
   if (gameName.search('Diamant') !== -1 && gameName.search('Diamant Étincelant') === -1) {
     games.push('Diamond')
@@ -143,10 +143,10 @@ export function getDEGameName (gameName : string[]) : Game[] {
     games.push('Sapphire')
   }
   if (gameName.includes('Pokémon Feuerrot')) {
-    games.push('Firered')
+    games.push('FireRed')
   }
   if (gameName.includes('Pokémon Blattgrün')) {
-    games.push('Leafgreen')
+    games.push('LeafGreen')
   }
   if (gameName.includes('Pokémon Smaragd')) {
     games.push('Emerald')
@@ -259,10 +259,10 @@ export function getITGameName (gameName : string) : Game[] {
     games.push('Sapphire')
   }
   if (gameName.includes('Rosso Fuoco')) {
-    games.push('Firered')
+    games.push('FireRed')
   }
   if (gameName.includes('Verde Foglia')) {
-    games.push('Leafgreen')
+    games.push('LeafGreen')
   }
   if (gameName.includes('Smeraldo')) {
     games.push('Emerald')
@@ -375,10 +375,10 @@ export function getESGameName (gameName : string) : Game[] {
     games.push('Sapphire')
   }
   if (gameName.includes('Rojo Fuego')) {
-    games.push('Firered')
+    games.push('FireRed')
   }
   if (gameName.includes('Verde Hoja')) {
-    games.push('Leafgreen')
+    games.push('LeafGreen')
   }
   if (gameName.includes('Esmeralda')) {
     games.push('Emerald')
