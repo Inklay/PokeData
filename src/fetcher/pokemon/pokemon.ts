@@ -130,7 +130,6 @@ export class PokemonFetcher extends Pokemon {
     }
       
     forms.forEach((form) => {
-      console.log(form.names[0]!.text)
       form.dexNumbers = dexNumbers
 
       if (form.formType === 'other') {

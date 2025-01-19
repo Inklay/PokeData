@@ -1,4 +1,5 @@
 import { load } from 'cheerio'
+import { wikis } from '../../wiki.ts'
 import { Category } from '../category.ts'
 import { Name } from '../../../class/name.ts'
 
@@ -51,7 +52,7 @@ export class TranslatedCategory extends Category {
     data.push(new TranslatedCategory('default', [new Name('fr', defaultCategory)]))
 
     if ($(`a[title='${name.text} de Paldea']`).length !== 0) {
-      const URL = `https://www.pokepedia.fr/${name.text}_de_Paldea`
+      const URL = `${wikis.get('fr')}${name.text}_de_Paldea`
       const pageHTML = await (await fetch(URL)).text()
       const $paldea = load(pageHTML)
       const category = $paldea('a[title=\'Catégorie\']').parent().next('td').text()
@@ -61,7 +62,7 @@ export class TranslatedCategory extends Category {
     }
 
     if ($(`a[title='${name.text} de Hisui']`).length !== 0) {
-      const URL = `https://www.pokepedia.fr/${name.text}_de_Hisui`
+      const URL = `${wikis.get('fr')}${name.text}_de_Hisui`
       const pageHTML = await (await fetch(URL)).text()
       const $hisui = load(pageHTML)
       const category = $hisui('a[title=\'Catégorie\']').parent().next('td').text()
@@ -71,7 +72,7 @@ export class TranslatedCategory extends Category {
     }
 
     if ($(`a[title='${name.text} de Galar']`).length !== 0) {
-      const URL = `https://www.pokepedia.fr/${name.text}_de_Galar`
+      const URL = `${wikis.get('fr')}${name.text}_de_Galar`
       const pageHTML = await (await fetch(URL)).text()
       const $galar = load(pageHTML)
       const category = $galar('a[title=\'Catégorie\']').parent().next('td').text()
@@ -117,28 +118,28 @@ export class TranslatedCategory extends Category {
     const defaultCategory = $('a[title=\'Categoría\']').parent().next('td').text().replaceAll('\n', '')
     data.push(new TranslatedCategory('default', [new Name('es', defaultCategory)]))
     if ($(`a[title='${name.text.replace('\'', '%27')} de Paldea']`).length !== 0) {
-      const URL = `https://www.wikidex.net/wiki/${name.text}_de_Paldea`
+      const URL = `${wikis.get('es')}${name.text}_de_Paldea`
       const pageHTML = await (await fetch(URL)).text()
       const $paldea = load(pageHTML)
-      const category = $paldea('a[title=\'Categoría\']').parent().next('td').text()
+      const category = $paldea('a[title=\'Categoría\']').parent().next('td').text().replaceAll('\n', '')
       if (category !== defaultCategory) {
         data.push(new TranslatedCategory('paldea', [new Name('es', category)]))
       }
     }
     if ($(`a[title='${name.text.replace('\'', '%27')} de Hisui']`).length !== 0) {
-      const URL = `https://www.pokepedia.fr/${name.text}_de_Hisui`
+      const URL = `${wikis.get('es')}${name.text}_de_Hisui`
       const pageHTML = await (await fetch(URL)).text()
       const $hisui = load(pageHTML)
-      const category = $hisui('a[title=\'Categoría\']').parent().next('td').text()
+      const category = $hisui('a[title=\'Categoría\']').parent().next('td').text().replaceAll('\n', '')
       if (category !== defaultCategory) {
         data.push(new TranslatedCategory('hisui', [new Name('es', category)]))
       }
     }
     if ($(`a[title='${name.text.replace('\'', '%27')} de Galar']`).length !== 0) {
-      const URL = `https://www.pokepedia.fr/${name.text}_de_Galar`
+      const URL = `${wikis.get('es')}${name.text}_de_Galar`
       const pageHTML = await (await fetch(URL)).text()
       const $galar = load(pageHTML)
-      const category = $galar('a[title=\'Categoría\']').parent().next('td').text()
+      const category = $galar('a[title=\'Categoría\']').parent().next('td').text().replaceAll('\n', '')
       if (category !== defaultCategory) {
         data.push(new TranslatedCategory('galar', [new Name('es', category)]))
       }
@@ -236,6 +237,7 @@ export class TranslatedCategory extends Category {
   private static getKO ($ : cheerio.Root) : TranslatedCategory[] {
     const data : TranslatedCategory[] = []
     const forms : string[] = []
+    let defaultCategory : string | undefined
 
     $('table#pokemonToggle > tbody > tr').each((index, value) => {
       // This is the table name
@@ -247,6 +249,7 @@ export class TranslatedCategory extends Category {
 
     $('div.infobox-pokemon > table.body > tbody > tr:nth-child(2) > td:nth-child(2)').each((index, value) => {
       let form = 'default'
+      const category = $(value).text().replaceAll('\n', '')
       if (index !== 0) {
         if (forms[index]?.search('가라르') !== -1) {
           form = 'galar'
@@ -255,8 +258,12 @@ export class TranslatedCategory extends Category {
         } else if (forms[index]?.search('팔데아') !== -1) {
           form = 'paldea'
         }
+      } else {
+        defaultCategory = category
       }
-      data.push(new TranslatedCategory(form, [new Name('ko', $(value).text().replaceAll('\n', ''))]))
+      if (defaultCategory !== category || index === 0) {
+        data.push(new TranslatedCategory(form, [new Name('ko', category)]))
+      }
     })
     return data
   }
