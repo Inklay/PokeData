@@ -109,7 +109,7 @@ export class PokemonFetcher extends Pokemon {
     const stats = PokemonStats.get($)
     const otherNames = getOtherNames($, true)
     const translatedData = await TranslatedData.getTranslatedData(otherNames, this.manualData, dexNumbers.nat)
-    const abilityList = PokemonFetcherAbility.get($, abilities)
+    const abilityList = PokemonFetcherAbility.get($, abilities, forms[0]!.names[0]!.text)
     const category = translatedData.category
     Category.get($, forms[0]!.names[0]!.text, category)
     const flavorText = PokemonPokedexEntry.get($, dexNumbers, translatedData.entries)
@@ -203,7 +203,6 @@ export class PokemonFetcher extends Pokemon {
         formWeight = weight[0]
       }
       form.weight = formWeight!.weight
-
       
       let formCategory: Category | undefined
       if (category.length === 1) {
@@ -273,7 +272,6 @@ export class PokemonFetcher extends Pokemon {
         pokemonAbilities.push(ability.ability)
       })
       form.abilities = pokemonAbilities
-      form.types = formTypes!.types
 
       // Some issues that are easier to fix here than in the data
       form = this.fixRandomStuff(form, stats)
